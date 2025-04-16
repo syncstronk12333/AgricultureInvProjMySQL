@@ -39,7 +39,7 @@ This system provides features for:
 1. Set up MySQL
 - Create a database named agri.
 - Create the stock table using the query below:
-- 
+  
 ```sql
   CREATE TABLE stock (
     Name VARCHAR(50) PRIMARY KEY,
