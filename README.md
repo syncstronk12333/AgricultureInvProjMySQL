@@ -74,9 +74,11 @@ INSERT INTO stock (Name, Stock, Profit, Loss) VALUES
 ('Beans', 175, NULL, 1200);
 ```
 2. Install Required Modules
+```bash
 pip install mysql-connector-python tabulate
+```
 
-3. Add Password (optional initial setup)
+4. Add Password (optional initial setup)
 - To manually set the login password in password.dat:
 ```python
   import pickle
