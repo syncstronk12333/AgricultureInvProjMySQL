@@ -34,27 +34,51 @@ This system provides features for:
 - User-friendly interface with menu-based navigation.
 - Clean output formatting using `tabulate`.
 
-### ⚙️ How to Run
+## ⚙️ How to Run
 
 1. Set up MySQL
-Create a database named agri.
-Create the stock table using the query below:
-CREATE TABLE stock (
+- Create a database named agri.
+- Create the stock table using the query below:
+- CREATE TABLE stock (
     Name VARCHAR(50) PRIMARY KEY,
     Stock INT NOT NULL,
     Profit INT,
     Loss INT
 );
 
+2. Insert values in database
+- use sample query to insert:
+- INSERT INTO stock (Name, Stock, Profit, Loss) VALUES
+('Wheat', 150, 3200, NULL),
+('Rice', 200, 2800, NULL),
+('Corn', 180, 2500, NULL),
+('Barley', 100, NULL, 900),
+('Millet', 90, 1200, NULL),
+('Sorghum', 130, NULL, 1100),
+('Tomato', 300, 4200, NULL),
+('Potato', 250, 3900, NULL),
+('Carrot', 220, 3500, NULL),
+('Cabbage', 160, NULL, 1400),
+('Onion', 280, 3100, NULL),
+('Garlic', 70, NULL, 1700),
+('Spinach', 90, 1500, NULL),
+('Broccoli', 85, NULL, 1300),
+('Chili', 95, 1800, NULL),
+('Peas', 200, 2100, NULL),
+('Lettuce', 140, NULL, 1000),
+('Radish', 110, 1600, NULL),
+('Cauliflower', 130, 1900, NULL),
+('Beans', 175, NULL, 1200);
+
 2. Install Required Modules
-pip install mysql-connector-python tabulate
+- pip install mysql-connector-python tabulate
 
 3. Add Password (optional initial setup)
-To manually set the login password in password.dat:
-import pickle
-with open("password.dat", "wb") as f:
-    pickle.dump("YourPasswordHere", f)
-Or run the program and choose the Reset Password option.
+- To manually set the login password in password.dat:
+- import pickle
+- with open("password.dat", "wb") as f:
+-     pickle.dump("YourPasswordHere", f)
+- Or run the program and choose the Reset Password option.
 
 4. Run the Program
-python agri.py
+- python agri.py
