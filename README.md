@@ -39,17 +39,18 @@ This system provides features for:
 1. Set up MySQL
 - Create a database named agri.
 - Create the stock table using the query below:
-'''sql
+- 
+```sql
   CREATE TABLE stock (
     Name VARCHAR(50) PRIMARY KEY,
     Stock INT NOT NULL,
     Profit INT,
     Loss INT
 );
-
+```
 2. Insert values in database
 - use sample query to insert:
-''sql
+```sql
 INSERT INTO stock (Name, Stock, Profit, Loss) VALUES
 ('Wheat', 150, 3200, NULL),
 ('Rice', 200, 2800, NULL),
@@ -71,18 +72,20 @@ INSERT INTO stock (Name, Stock, Profit, Loss) VALUES
 ('Radish', 110, 1600, NULL),
 ('Cauliflower', 130, 1900, NULL),
 ('Beans', 175, NULL, 1200);
-
+```
 2. Install Required Modules
 pip install mysql-connector-python tabulate
 
 3. Add Password (optional initial setup)
 - To manually set the login password in password.dat:
-  '''python
+```python
   import pickle
   with open("password.dat", "wb") as f:
      pickle.dump("YourPasswordHere", f)
+```
 - Or run the program and choose the Reset Password option.
 
 4. Run the Program
-   '''python
+```python
 python agri.py
+```
