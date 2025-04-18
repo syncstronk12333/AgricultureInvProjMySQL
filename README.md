@@ -1,7 +1,5 @@
 # 🌾 Agriculture Inventory System
 
-A console-based inventory management system built using **Python** and **MySQL** for efficiently managing agricultural crop data, profits/losses, and tool inventory.
-
 ## 📌 Project Overview
 
 This system provides features for:
